@@ -1,4 +1,4 @@
-# Jekyll Atlantic - Jekyll + Tailwind Starter Theme
+# leme.nl - Jekyll + Tailwind Starter Theme
 
 The codebase for leme.nl, based on Atlantic; a beutiful minimal blog theme for Jekyll. It is an excellent Jekyll + Tailwind boilerplate to start from.
 
