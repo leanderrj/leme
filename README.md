@@ -1,18 +1,10 @@
 # Jekyll Atlantic - Jekyll + Tailwind Starter Theme
 
-Atlantic is a beutiful minimal blog theme for Jekyll. It is an excellent Jekyll + Tailwind boilerplate to start from.
-
-[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
-
-![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
+The codebase for leme.nl, based on Atlantic; a beutiful minimal blog theme for Jekyll. It is an excellent Jekyll + Tailwind boilerplate to start from.
 
 ## Theme features
 
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/jekyll.svg" /> [Jekyll](https://jekyllrb.com/) 4.1+
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/tailwind.svg" /> [Tailwind CSS](https://tailwindcss.com/docs) v2.2+
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/postcss.svg" /> [PostCSS](https://postcss.org/) 8.3+
-
-- Uses PostCSS with autoprefixer, nested css, cssnano (minify css) 
+- Uses PostCSS with autoprefixer, nested css, cssnano (minify css)
 - Works with native Jekyll commands `jekyll serve` and `jekyll build`
 - Correctly uses Tailwind to purge CSS in production
 - Full blog functionality
@@ -34,7 +26,7 @@ Atlantic is a beutiful minimal blog theme for Jekyll. It is an excellent Jekyll 
 ## Installation
 
 ### Installing Ruby & Jekyll
- 
+
 If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
 
 ### Installing Theme
@@ -51,16 +43,16 @@ npm install
 
 ```
 bundle install
-``` 
+```
 
 To start the Jekyll local development server.
 
 ```
 bundle exec jekyll serve
-``` 
+```
 
 To build the theme.
- 
+
 ```
 bundle exec jekyll build
 ```
@@ -85,7 +77,7 @@ For example the site https://zerostaticthemes.github.io/jekyll-atlantic-theme wo
 - Don't create ports or new versions of this theme without asking me
 - You can't re-distribute or re-sell this theme as your own template
 
-### Credits 
+### Credits
 
 - Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
 - Stock images by Unsplash - https://unsplash.com/
