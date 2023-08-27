@@ -15,6 +15,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install Dependencies
       run: npm install
+
+    - name: Install bundles
+      run: bundle install
       
     - name: Update baseurl in _config.yaml
       uses: fjogeleit/yaml-update-action@master
