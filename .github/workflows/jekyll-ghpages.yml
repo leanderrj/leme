@@ -16,9 +16,12 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Bundler CLI
-      uses: CultureHQ/actions-bundler@v1.0.0
-      
+    - name: Action Hugo
+    uses: kevvurs/action-hugo@v1.0-rc2
+    with:
+      hugo-version: 'latest'
+      extended: true
+
     - name: Update baseurl in _config.yaml
       uses: fjogeleit/yaml-update-action@master
       with:
