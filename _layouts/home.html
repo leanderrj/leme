@@ -2,17 +2,15 @@
 layout: default
 ---
 
-
 <header class="">
-  <div class="flex items-center justify-center w-full h-screen p-6 bg-center bg-top bg-cover text-accent" style="background-image: url(/assets/images/leme-background.jpg);">
-
+  <div class="flex items-center justify-center w-full h-screen p-6 bg-center bg-top bg-cover text-accent" style="background-image: url(/leme/assets/images/leme-background.jpg);">
     {% if site.logo.logo_desktop_image %}
-      <img class="inline mr-2 " height="{{ site.logo.logo_desktop_height }}" width="{{ site.logo.logo_desktop_width }}"
+      <img class="inline" height="{{ site.logo.logo_desktop_height }}" width="{{ site.logo.logo_desktop_width }}"
         alt="{{ site.title }} Logo" src="{{ site.logo.logo_desktop_image | relative_url }}" />
     {% endif %}
   </div>
 
-  {% include navigation.html  logo="leme/assets/images/logo/leme-logo-free.svg" %}
+  {% include navigation.html  logo="/assets/images/logo/leme-logo-free.svg" %}
 
 </header>
 
