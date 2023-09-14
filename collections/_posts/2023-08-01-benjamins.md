@@ -4,26 +4,26 @@ date: 2023-08-01T09:49:03+10:00
 title: "Benjamins"
 description: a Sustainable Fashion Powerhouse in the heart of Utrecht
 thumbnail: "assets/images/benjamins_1.jpg"
-image: "leme/assets/images/benjamins_1.jpg"
+image: "/assets/images/benjamins_1.jpg"
 
 images:
-  - image_path: leme/assets/images/benjamins_4.jpg
+  - image_path: /assets/images/benjamins_4.jpg
     title: Benjamin's Suit, Jyoti Back
-  - image_path: leme/assets/images/benjamins_1.jpg
+  - image_path: /assets/images/benjamins_1.jpg
     title: Photo of Phone in Benjamin's
-  - image_path: leme/assets/images/benjamins_3.jpg
+  - image_path: /assets/images/benjamins_3.jpg
     title: iPad in the Studio
-  - image_path: leme/assets/images/benjamins_2.jpg
+  - image_path: /assets/images/benjamins_2.jpg
     title: Leonie Zooms in on Pants
-  - image_path: leme/assets/images/benjamins_9.jpg
+  - image_path: /assets/images/benjamins_9.jpg
     title: Vertical iPad in the Studio
-  - image_path: leme/assets/images/benjamins_5.jpg
+  - image_path: /assets/images/benjamins_5.jpg
     title: Insight into Benjamin's Store with Big Red Boot
-  - image_path: leme/assets/images/benjamins_7.jpg
+  - image_path: /assets/images/benjamins_7.jpg
     title: Photo of Jyoti in Front of the Store
-  - image_path: leme/assets/images/benjamins_8.jpg
+  - image_path: /assets/images/benjamins_8.jpg
     title: Sewing in the Studio
-  - image_path: leme/assets/images/benjamins_6.jpg
+  - image_path: /assets/images/benjamins_6.jpg
     title: Jyoti's Last Day at Previous Job
 ---
 
