@@ -2,15 +2,18 @@
 {% assign description = include.description %}
 {% assign align = include.align %}
 {% assign date = include.date %}
+{% assign heading_class = include.class %}
 
-<div class="py-6 md:py-12 lg:w-10/12 {% if align == "center" %}md:text-center mx-auto{% endif %}">
-  {% if date %}
-  <div class="font-medium text-gray-700">{{ date | date_to_long_string }}</div>
-  {% endif %}
-  <h1 class="heading text-4xl md:text-6xl font-bold font-sans md:leading-tight">
+<div class="{{ heading_class }} sticky top-0 lg:w-10/12 {% if align == "center" %} mx-auto{% endif %}">
+  <h1 class="block font-bold text-white text-9xl heading md:leading-tight mix-blend-difference blur-sm filter">
     {{ heading }}
   </h1>
+
   {% if description %}
-  <h2 class="text-xl text-gray-600 mt-2">{{ description }}</h2>
+    <h2 class="inline-block p-2 text-xl ">{{ description }}</h2>
+  {% endif %}
+
+  {% if date %}
+    <div class="mt-2 font-medium text-gray-700">{{ date | date_to_long_string }}</div>
   {% endif %}
 </div>

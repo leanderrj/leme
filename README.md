@@ -1,6 +1,6 @@
 # leme.nl - Jekyll + Tailwind Starter Theme
 
-The codebase for leme.nl, based on Atlantic; a beutiful minimal blog theme for Jekyll. It is an excellent Jekyll + Tailwind boilerplate to start from.
+The codebase for leme.nl a minimal showcase made with Jekyll. It is a neat Jekyll + Tailwind boilerplate to start from.
 
 ## Theme features
 
@@ -8,11 +8,9 @@ The codebase for leme.nl, based on Atlantic; a beutiful minimal blog theme for J
 - Works with native Jekyll commands `jekyll serve` and `jekyll build`
 - Correctly uses Tailwind to purge CSS in production
 - Full blog functionality
-- Beautfifuly designed responsive blog and post layouts
+- Neat designed responsive blog and post layouts
 - Blog categories
-- Blog authors (multiple)
 - Blog pagination
-- Ready to deploy to Netlify
 - Responsive design
 - Responsive menu
 - 100/100 Google Lighthouse speed score ⚡
@@ -58,38 +56,8 @@ bundle exec jekyll build
 ```
 
 ## Deployment
-
-### Netlify
-
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml`
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-atlantic-theme)
-
 ### Github Pages
 This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
 
 For example the site https://zerostaticthemes.github.io/jekyll-atlantic-theme would have `baseurl: "/jekyll-atlantic-theme/"`
 
-## Extras
-
-### License
-
-- Don't create ports or new versions of this theme without asking me
-- You can't re-distribute or re-sell this theme as your own template
-
-### Credits
-
-- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
-
-### Other Jekyll Themes by Zerostatic
-
-- [Jekyll Serif](https://github.com/zerostaticthemes/jekyll-serif-theme) - Open Source
-- [Jekyll Advance](https://www.zerostatic.io/theme/jekyll-advance/) - Premium
-- [Jekyll Curate](https://github.com/zerostaticthemes/jekyll-curate) - Premium
-- [Jekyll Origin](https://www.zerostatic.io/theme/jekyll-origin/) - Premium
-
-🇦🇺 **Made in Australia** by Robert Austin - Support our work - **Star this repo** ⭐
-
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

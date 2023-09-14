@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Case Studies by leme"
+heading: "Case Studies"
+---
+
+{% include heading.html heading=page.heading %}
+
+<main class="grid grid-cols-2 gap-10 py-6 ">
+  {% for post in site.posts %}
+  <div class="z-50 inline-block w-full mb-2 bg-slate ">
+    {% include summary.html post=post %}
+  </div>
+  {% endfor %}
+</main>
+
+{% include paginator.html %}

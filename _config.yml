@@ -1,6 +1,6 @@
-baseurl: "/leme/"
+baseurl: "/"
 permalink: pretty
-title: "Jekyll Portfolio"
+title: "leme"
 collections_dir: collections
 markdown: kramdown
 highlighter: rouge
@@ -13,18 +13,17 @@ sass:
 google_analytics_id: false # replace with "UA-XXXX"
 
 logo:
-  logo_desktop_image: assets/images/logo/logo.svg
-  logo_desktop_text: "Jekyll <strong>Atlantic</strong>"
-  logo_mobile_image: assets/images/logo/logo-mobile.svg
+  logo_desktop_image: assets/images/logo/leme-logo-mono.svg
+  logo_mobile_image: assets/images/logo/leme-logo-free.svg
+  logo_desktop_text: "Leme by Leander Jansen"
   logo_mobile_text: ""
-  logo_desktop_height: "36px"
-  logo_desktop_width: "36px"
-  logo_mobile_height: "36px"
-  logo_mobile_width: "36px"
+  logo_desktop_height: "30px"
+  logo_desktop_width: "200px"
+  logo_mobile_height: "20px"
+  logo_mobile_width: "150px"
 
 seo:
   meta_twitter_site: "@leanderrj"
-  meta_twitter_creator: "@leanderrj"
   meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
 
 plugins:
@@ -33,12 +32,12 @@ plugins:
   - jekyll-paginate
 
 paginate: 3
-paginate_path: /blog/page:num/
+paginate_path: /projects/page:num/
 
 collections:
   posts:
     output: true
-    permalink: /blog/:path/
+    permalink: /projects/:path/
 
 defaults:
   - scope:
@@ -50,11 +49,6 @@ defaults:
       path: "images"
     values:
       image: true
-  - scope:
-      path: "categories"
-    values:
-      layout: category
-      permalink: /category/:basename/
 
 exclude:
   - Gemfile

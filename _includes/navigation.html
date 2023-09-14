@@ -1,0 +1,16 @@
+{% assign logo = include.logo %}
+
+<div class="relative z-40 flex justify-between w-full text-center bg-primary ">
+    {% if logo %}
+        <img class="h-10 " src="{{ logo | relative_url }}" alt="">
+    {% endif %}
+
+
+    <div class="flex text-lg text-center ">
+        {% for item in site.data.menu.main %}
+        <a class="p-2 pr-2 text-gray-400 hover:text-leme " href="{{ item.url }}">{{ item.name }}{% unless forloop.last %} 🔹{% endunless %}</a>
+        {% endfor %}
+    </div>
+
+
+</div>

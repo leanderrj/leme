@@ -2,57 +2,59 @@
 layout: default
 ---
 
-{% include heading.html heading=page.title description=page.description align="center" date=page.date %}
-
-{% if page.authors %}
-  <div class="flex flex-col pb-3 md:hidden">
-    {% for author in page.authors %}
-      {% include author-large.html
-        author=author
-      %}
+{% if page.images %}
+  <aside class="sticky top-0 flex w-screen overflow-x-scroll h-96 sm:h-screen photo-gallery horizontal-scroll flex-nowrap">
+    {% for image in page.images %}
+      <img class="object-cover w-full" src="{{ image.image_path }}" alt="{{ image.title}}"/>
     {% endfor %}
-  </div>
+  </aside>
 {% endif %}
 
-<img width="1600" height="900" src="{{ page.image }}"/>
+<article class="relative md:-top-96 ">
 
-<div class="flex flex-col md:flex-row py-6 md:py-12">
-
-  <div class="w-full md:w-3/12 pr-3">
-    {% if page.authors %}
-      <div class="flex flex-col hidden md:flex mb-3 md:mb-6">
-        {% for author in page.authors %}
-          {% include author-large.html
-        author=author
-        %}
-        {% endfor %}
-      </div>
-    {% endif %}
-
-    {% if page.categories %}
-      <div class="hidden md:block">
-        {% for category in page.categories %}
-          {% include category-badge.html %}
-        {% endfor %}
-      </div>
-    {% endif %}
+  <div class="sticky top-0 z-20 overflow-x-scroll  lg:w-10/12 {% if align == "center" %} mx-auto{% endif %}">
+    <h1 class="block font-bold text-accent text-9xl heading md:leading-tight mix-blend-difference blur-sm filter">
+      {{ page.title }}
+    </h1>
   </div>
+  {% if page.description %}
+    <h2 class="inline-block p-2 text-2xl ">{{ page.description }}</h2>
+  {% endif %}
 
-  <div class="w-full md:w-9/12">
-    <div class="prose">
-      {{ content }}
+  <div class="z-10 flex flex-col justify-end py-2 md:flex-row md:py-8 md:pt-40 ">
+    <div class="w-8/12 max-w-xl mr-20 bg-white">
+      <div class="p-2 post_meta">
+        <h2 class="text-3xl font-bold">{{ page.title }}</h2>
+        <p class="hidden">{{ page.description }}</p>
+      </div>
+
+      <div class="p-4 prose-lg">
+        {{ content }}
+      </div>
     </div>
   </div>
-
-</div>
+</article>
 
 {% if page.categories %}
-  <div class="py-6 mt-6 border-t-2 block md:hidden">
-    <h3 class="text-sm font-medium mb-1">Categories</h3>
+  <div class="block mb-6 border-b-2 md:hidden">
+    <h3 class="mb-1 text-sm font-medium">Categories</h3>
     <div>
       {% for category in page.categories %}
         {% include category-badge.html %}
       {% endfor %}
     </div>
   </div>
-{% endif %} 
+{% endif %}
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var scrollElement = document.querySelector('.horizontal-scroll');
+    if (scrollElement) {
+      window.addEventListener('wheel', function(e) {
+        if (e.deltaY > 0) scrollElement.scrollLeft += 10;
+        else scrollElement.scrollLeft -= 10;
+      });
+    }
+  });
+</script>

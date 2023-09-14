@@ -3,7 +3,7 @@ main:
     url: "/"
     weight: 1
   - name: "Case Studies"
-    url: "/blog/"
+    url: "/projects/"
     weight: 2
   - name: "About"
     url: "/about/"
