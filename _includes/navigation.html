@@ -8,7 +8,7 @@
 
     <div class="flex text-lg text-center ">
         {% for item in site.data.menu.main %}
-        <a class="p-2 pr-2 text-gray-400 hover:text-leme " href="{{ item.url }}">{{ item.name }}{% unless forloop.last %} 🔹{% endunless %}</a>
+            <a class="p-2 pr-2 text-gray-400 hover:text-leme " href="{{ item.url | relative_url  }}">{{ item.name }}{% unless forloop.last %} 🔹{% endunless %}</a>
         {% endfor %}
     </div>
 
