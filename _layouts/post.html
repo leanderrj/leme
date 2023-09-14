@@ -5,13 +5,12 @@ layout: default
 {% if page.images %}
   <aside class="sticky top-0 flex w-screen overflow-x-scroll h-96 sm:h-screen photo-gallery horizontal-scroll flex-nowrap">
     {% for image in page.images %}
-      <img class="object-cover w-full" src="{{ image.image_path }}" alt="{{ image.title}}"/>
+      <img class="object-cover w-full" src="{{ image.image_path }}" alt="{{ image.title }}"/>
     {% endfor %}
   </aside>
 {% endif %}
 
 <article class="relative md:-top-96 ">
-
   <div class="sticky top-0 z-20 overflow-x-scroll  lg:w-10/12 {% if align == "center" %} mx-auto{% endif %}">
     <h1 class="block font-bold text-accent text-9xl heading md:leading-tight mix-blend-difference blur-sm filter">
       {{ page.title }}
