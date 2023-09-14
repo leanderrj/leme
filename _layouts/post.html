@@ -5,7 +5,7 @@ layout: default
 {% if page.images %}
   <aside class="sticky top-0 flex w-screen overflow-x-scroll h-96 sm:h-screen photo-gallery horizontal-scroll flex-nowrap">
     {% for image in page.images %}
-      <img class="object-cover w-full" src="{{ image.image_path }}" alt="{{ image.title }}"/>
+      <img class="object-cover w-full" src="{{ image.image_path | relative_url }}" alt="{{ image.title }}"/>
     {% endfor %}
   </aside>
 {% endif %}
